@@ -1,22 +1,88 @@
 #!/bin/bash
 # Variables
-
+whoami="imcoderlg"
+SHFILEPATH="./scripts"
+FIGLETS="./figlets"
 # Start!
-echo "Setting system up with im-coder-lg's favourite tools..."
+clear
+cat $FIGLETS/start.txt
 # Add NVM
-echo -n "do you want to set up nvm? (1 for yes/2 for no) "
-read nvmyn
-if [$nvmyn==1]
-then
-    sh ./nvm-setup.sh
-fi
+cat $FIGLETS/nvm/start.txt
+echo "
+"
+sh $SHFILEPATH/nvm-setup.sh
+clear
+cat $FIGLETS/start.txt
+echo "
+"
+cat $FIGLETS/nvm/start.txt
+echo "
+"
+cat $FIGLETS/nvm/done.txt
 # Add Pyenv
-
+cat $FIGLETS/pyenv/start.txt
+echo "
+"
+sh $SHFILEPATH/pyenv-setup.sh
+clear
+cat $FIGLETS/start.txt
+echo "
+"
+cat $FIGLETS/nvm/start.txt
+echo "
+"
+cat $FIGLETS/nvm/done.txt
+echo "
+"
+cat $FIGLETS/pyenv/start.txt
+echo "
+"
+cat $FIGLETS/pyenv/done.txt
 # Get pre-commit up and running!
-pip3 install pre-commit
-pre-commit --install
-# Get Commitizen
-pip3 install commitizen
+sh $SHFILEPATH/pre-commit.sh
 
+cat $FIGLETS/start.txt
+echo "
+"
+cat $FIGLETS/nvm/start.txt
+echo "
+"
+cat $FIGLETS/nvm/done.txt
+echo "
+"
+cat $FIGLETS/pyenv/start.txt
+echo "
+"
+cat $FIGLETS/pyenv/done.txt
+echo "
+"
+cat $FIGLETS/pre-commit/start.txt
+echo "
+"
+cat $FIGLETS/pre-commit/done.txt
 # In the end
-echo "Done. Go simple."
+clear
+cat $FIGLETS/start.txt
+echo "
+"
+cat $FIGLETS/nvm/start.txt
+echo "
+"
+cat $FIGLETS/nvm/done.txt
+echo "
+"
+cat $FIGLETS/pyenv/start.txt
+echo "
+"
+cat $FIGLETS/pyenv/done.txt
+echo "
+"
+cat $FIGLETS/pre-commit/start.txt
+echo "
+"
+cat $FIGLETS/pre-commit/done.txt
+echo "
+"
+cat $FIGLETS/done.txt
+echo "
+"

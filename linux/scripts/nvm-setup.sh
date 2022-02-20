@@ -1,7 +1,8 @@
 #!/bin/bash
 # variables
-export node_ver="lts"
+export node_ver="16.14"
 # Install node14-lts with `nvm`
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
