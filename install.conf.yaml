@@ -5,5 +5,15 @@
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
     ~/.zshrc: zshrc
+    ~/.commit-bin: commit-bin/
+    ~/.fonts: fonts/
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- defaults:
+    link:
+      relink: true
+
+
 
 
