@@ -26,4 +26,4 @@
  #   PATH="$HOME/.local/bin:$PATH"
 #fi
 alias ls="ls -la"
-
+export PATH=$PATH:$HOME/.local/bin
