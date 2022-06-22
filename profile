@@ -27,4 +27,4 @@
 #fi
 alias ls="ls -la"
 export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:$HOME/.commit-bin
+export PATH=$PATH:$HOME/.dotfiles/bin
